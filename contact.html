@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us – City Government of Panabo (Student Prototype)</title>
+  <link rel="icon" href="assets/img/seal.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4">
+</head>
+<body data-nav="contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <div class="page-head">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Contact Us</span></li></ol></nav>
+        <h1>Contact Us</h1>
+        <p class="intro">Send a question, request or feedback to the City Government. For emergencies, call the <a href="hotlines.html">emergency hotlines</a> instead.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container two-col">
+        <div class="stack">
+          <section class="panel panel-soft" aria-labelledby="details-title">
+            <h2 id="details-title">Contact details</h2>
+            <dl class="stack" style="margin:0">
+              <div><dt><strong>City Hall address</strong></dt><dd style="margin:0">[City Hall street address], Panabo City, Davao del Norte <span class="tag-sample">Sample</span></dd></div>
+              <div><dt><strong>Mayor’s Office</strong></dt><dd style="margin:0"><a href="tel:+639988107142">0998 810 7142</a> <span class="tag-verified">From official hotlines page</span></dd></div>
+              <div><dt><strong>City Hall trunk line</strong></dt><dd style="margin:0">(084) XXX-XXXX <span class="tag-sample">Sample</span></dd></div>
+              <div><dt><strong>Official email</strong></dt><dd style="margin:0">info@example.com <span class="tag-sample">Sample</span></dd></div>
+              <div><dt><strong>Office hours</strong></dt><dd style="margin:0">Monday to Friday, 8:00 AM – 5:00 PM, except holidays <span class="tag-sample">Sample</span></dd></div>
+              <div><dt><strong>Social media</strong></dt><dd style="margin:0"><a href="https://www.facebook.com/panabocityPIO">Panabo City Information Office on Facebook</a></dd></div>
+            </dl>
+          </section>
+          <section aria-labelledby="map-title">
+            <h2 id="map-title">Map</h2>
+            <iframe class="map-frame" title="Map of the Panabo City area (OpenStreetMap). Location is approximate."
+              src="https://www.openstreetmap.org/export/embed.html?bbox=125.63%2C7.27%2C125.74%2C7.34&amp;layer=mapnik" loading="lazy"></iframe>
+            <p class="small muted">The map shows the Panabo City area. The exact City Hall location is not marked because it was not verified for this prototype. <a href="https://www.openstreetmap.org/#map=14/7.305/125.684">Open a larger map of Panabo City</a></p>
+          </section>
+        </div>
+
+        <section class="panel" aria-labelledby="form-title">
+          <h2 id="form-title">Send us a message</h2>
+          <p class="small muted">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required. This prototype does not send or store your message.</p>
+          <div id="contact-success" class="success-box" role="status" tabindex="-1" hidden>
+            <span aria-hidden="true">✓</span><span>Thank you. Your message was sent. We reply within 3 working days.</span>
+          </div>
+          <form data-contact-form novalidate class="form-grid" style="margin-top:16px">
+            <div class="field">
+              <label for="c-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="c-name" name="name" autocomplete="name" required aria-describedby="c-name-err">
+              <span class="field-error" id="c-name-err"></span>
+            </div>
+            <div class="field">
+              <label for="c-email">Email address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="c-email" name="email" autocomplete="email" required aria-describedby="c-email-err">
+              <span class="field-error" id="c-email-err"></span>
+            </div>
+            <div class="field">
+              <label for="c-phone">Mobile number (optional)</label>
+              <input type="tel" id="c-phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="c-topic">Topic <span class="req" aria-hidden="true">*</span></label>
+              <select id="c-topic" name="topic" required aria-describedby="c-topic-err">
+                <option value="">Choose a topic</option>
+                <option>Business permits</option>
+                <option>Civil registry documents</option>
+                <option>Barangay concerns</option>
+                <option>Feedback about a city service</option>
+                <option>Other</option>
+              </select>
+              <span class="field-error" id="c-topic-err"></span>
+            </div>
+            <div class="field full">
+              <label for="c-msg">Message <span class="req" aria-hidden="true">*</span></label>
+              <span class="hint" id="c-msg-hint">Tell us what you need. Do not include passwords or bank details.</span>
+              <textarea id="c-msg" name="message" required aria-describedby="c-msg-hint c-msg-err"></textarea>
+              <span class="field-error" id="c-msg-err"></span>
+            </div>
+            <div class="full"><button type="submit" class="btn">Send message</button></div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js?v=4"></script>
+</body>
+</html>

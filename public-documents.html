@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Public Documents – City Government of Panabo (Student Prototype)</title>
+  <link rel="icon" href="assets/img/seal.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4">
+</head>
+<body data-nav="transparency">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <div class="page-head">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="transparency.html">Transparency</a></li><li><span aria-current="page">Public Documents</span></li></ol></nav>
+        <h1>Public Documents</h1>
+        <p class="intro">Budgets, plans, reports and procurement notices. Every item has a direct PDF download. <span class="tag-sample">Documents on this page are sample content</span></p>
+      </div>
+    </div>
+    <div class="section" style="padding-top:24px">
+      <div class="container" data-filter-list data-noun="documents">
+        <form class="filters" role="search" aria-label="Filter documents">
+          <div class="field"><label for="doc-q">Search by document title</label><input type="search" id="doc-q" data-filter-text autocomplete="off"></div>
+          <div class="field"><label for="doc-cat">Filter by category</label>
+            <select id="doc-cat" data-filter-select>
+              <option value="">All categories</option>
+              <option value="budget">Budget and finance</option>
+              <option value="plans">Plans and projects</option>
+              <option value="procurement">Bids, awards and RFQs</option>
+            </select></div>
+          <button type="button" class="btn btn-outline" data-filter-reset>Clear filters</button>
+        </form>
+        <p class="result-count" data-count aria-live="polite"></p>
+        <ul class="doc-list" data-list>
+          <li class="doc-item" data-row data-group="budget" data-search="Annual Budget 2026">
+            <span class="file-badge" aria-hidden="true">PDF</span>
+            <div><h3>Annual Budget 2026</h3><p class="small muted" style="margin:0">Budget and finance · PDF, 2.4 MB · Posted Jan 15, 2026</p></div>
+            <div class="doc-actions"><button type="button" class="btn btn-outline" data-preview="Annual Budget 2026">Preview</button><button type="button" class="btn" data-demo="Annual Budget 2026">Download PDF: Annual Budget 2026 (demo)</button></div></li>
+          <li class="doc-item" data-row data-group="budget" data-search="Statement of Receipts and Expenditures 2025">
+            <span class="file-badge" aria-hidden="true">PDF</span>
+            <div><h3>Statement of Receipts and Expenditures 2025</h3><p class="small muted" style="margin:0">Budget and finance · PDF, 890 KB · Posted Mar 30, 2026</p></div>
+            <div class="doc-actions"><button type="button" class="btn btn-outline" data-preview="Statement of Receipts and Expenditures 2025">Preview</button><button type="button" class="btn" data-demo="Statement of Receipts and Expenditures 2025">Download PDF: Statement of Receipts and Expenditures 2025 (demo)</button></div></li>
+          <li class="doc-item" data-row data-group="plans" data-search="Annual Procurement Plan 2026">
+            <span class="file-badge" aria-hidden="true">PDF</span>
+            <div><h3>Annual Procurement Plan 2026</h3><p class="small muted" style="margin:0">Plans and projects · PDF, 1.1 MB · Posted Jan 20, 2026</p></div>
+            <div class="doc-actions"><button type="button" class="btn btn-outline" data-preview="Annual Procurement Plan 2026">Preview</button><button type="button" class="btn" data-demo="Annual Procurement Plan 2026">Download PDF: Annual Procurement Plan 2026 (demo)</button></div></li>
+          <li class="doc-item" data-row data-group="plans" data-search="Annual Investment Program 2026">
+            <span class="file-badge" aria-hidden="true">PDF</span>
+            <div><h3>Annual Investment Program 2026</h3><p class="small muted" style="margin:0">Plans and projects · PDF, 1.6 MB · Posted Feb 2, 2026</p></div>
+            <div class="doc-actions"><button type="button" class="btn btn-outline" data-preview="Annual Investment Program 2026">Preview</button><button type="button" class="btn" data-demo="Annual Investment Program 2026">Download PDF: Annual Investment Program 2026 (demo)</button></div></li>
+          <li class="doc-item" data-row data-group="procurement" data-search="Invitation to Bid road concreting">
+            <span class="file-badge" aria-hidden="true">PDF</span>
+            <div><h3>Invitation to Bid: Barangay Road Concreting</h3><p class="small muted" style="margin:0">Bids, awards and RFQs · PDF, 420 KB · Posted Oct 6, 2026</p></div>
+            <div class="doc-actions"><button type="button" class="btn btn-outline" data-preview="Invitation to Bid: Barangay Road Concreting">Preview</button><button type="button" class="btn" data-demo="Invitation to Bid: Barangay Road Concreting">Download PDF: Invitation to Bid, Road Concreting (demo)</button></div></li>
+          <li class="doc-item" data-row data-group="procurement" data-search="Notice of Award office supplies RFQ">
+            <span class="file-badge" aria-hidden="true">PDF</span>
+            <div><h3>Notice of Award: Office Supplies (RFQ)</h3><p class="small muted" style="margin:0">Bids, awards and RFQs · PDF, 210 KB · Posted Nov 12, 2026</p></div>
+            <div class="doc-actions"><button type="button" class="btn btn-outline" data-preview="Notice of Award: Office Supplies">Preview</button><button type="button" class="btn" data-demo="Notice of Award: Office Supplies">Download PDF: Notice of Award, Office Supplies (demo)</button></div></li>
+        </ul>
+        <div class="empty-state" data-empty hidden><h2>No documents found</h2><p data-empty-msg></p><button type="button" class="btn btn-outline" data-filter-reset>Show all documents</button></div>
+        <section class="preview-area" aria-labelledby="pv-title">
+          <h2 id="pv-title" class="visually-hidden">Document preview</h2>
+          <div id="preview-area" tabindex="-1" aria-live="polite"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js?v=4"></script>
+</body>
+</html>

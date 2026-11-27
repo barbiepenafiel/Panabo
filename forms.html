@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downloadable Forms – City Government of Panabo (Student Prototype)</title>
+  <link rel="icon" href="assets/img/seal.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4">
+</head>
+<body data-nav="services">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <div class="page-head">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><span aria-current="page">Downloadable Forms</span></li>
+          </ol>
+        </nav>
+        <h1>Downloadable Forms</h1>
+        <p class="intro">Download, print and fill out city forms before you visit the office, so your transaction is faster. Search by name or choose an office to narrow the list.</p>
+      </div>
+    </div>
+
+    <div class="section" style="padding-top:24px">
+      <div class="container" data-filter-list data-noun="forms">
+        <form class="filters" role="search" aria-label="Filter forms">
+          <div class="field">
+            <label for="form-q">Search by form name</label>
+            <input type="search" id="form-q" data-filter-text autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="form-office">Filter by office</label>
+            <select id="form-office" data-filter-select>
+              <option value="">All offices</option>
+              <option value="bplo">Business Permits and Licensing Office</option>
+              <option value="barangay">Barangay Hall</option>
+              <option value="ccro">City Civil Registry Office</option>
+              <option value="obo">Office of the Building Official</option>
+              <option value="treasurer">Office of the City Treasurer</option>
+              <option value="cho">City Health Office</option>
+              <option value="mayor">Office of the City Mayor</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-outline" data-filter-reset>Clear filters</button>
+        </form>
+
+        <p class="result-count" data-count aria-live="polite"></p>
+
+        <div class="table-wrap" data-list>
+          <table class="data-table">
+            <caption>Only the Business Permit Application Form is a real file from panabocity.gov.ph. Rows marked <span class="tag-sample">Sample</span> are prototype content, and their download buttons are demo links.</caption>
+            <thead>
+              <tr><th scope="col">Form name</th><th scope="col">Office</th><th scope="col">File</th><th scope="col">Last updated</th><th scope="col"><span class="visually-hidden">Download</span></th></tr>
+            </thead>
+            <tbody>
+              <tr data-row data-group="bplo" data-search="Business Permit Application Form new renewal">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Business Permit Application Form<br><span class="tag-verified">Official file</span></span></span></td>
+                <td data-label="Office">Business Permits and Licensing Office</td>
+                <td data-label="File">PDF, size not listed</td>
+                <td data-label="Last updated">July 2026</td>
+                <td class="td-action"><a class="btn" href="https://panabocity.gov.ph/wp-content/uploads/2026/07/Bsuiness-Permit-Form.pdf">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Business Permit Application Form</a></td>
+              </tr>
+              <tr data-row data-group="barangay" data-search="Barangay Clearance Request">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Barangay Clearance Request<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">Barangay Hall</td>
+                <td data-label="File">PDF, 180 KB</td>
+                <td data-label="Last updated"><time datetime="2026-09-15">Sept 15, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Barangay Clearance Request">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Barangay Clearance Request (demo)</button></td>
+              </tr>
+              <tr data-row data-group="ccro" data-search="Civil Registry Document Request birth marriage death certificate">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Civil Registry Document Request<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">City Civil Registry Office</td>
+                <td data-label="File">PDF, 210 KB</td>
+                <td data-label="Last updated"><time datetime="2026-08-04">Aug 4, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Civil Registry Document Request">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Civil Registry Document Request (demo)</button></td>
+              </tr>
+              <tr data-row data-group="obo" data-search="Building Permit Application construction">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Building Permit Application<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">Office of the Building Official</td>
+                <td data-label="File">PDF, 1.2 MB</td>
+                <td data-label="Last updated"><time datetime="2026-06-20">June 20, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Building Permit Application">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Building Permit Application (demo)</button></td>
+              </tr>
+              <tr data-row data-group="obo" data-search="Certificate of Occupancy Application building">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Certificate of Occupancy Application<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">Office of the Building Official</td>
+                <td data-label="File">PDF, 650 KB</td>
+                <td data-label="Last updated"><time datetime="2026-06-20">June 20, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Certificate of Occupancy Application">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Certificate of Occupancy Application (demo)</button></td>
+              </tr>
+              <tr data-row data-group="treasurer" data-search="Cedula (Community Tax Certificate) Request CTC">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Cedula (Community Tax Certificate) Request<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">Office of the City Treasurer</td>
+                <td data-label="File">PDF, 95 KB</td>
+                <td data-label="Last updated"><time datetime="2026-01-05">Jan 5, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Cedula (Community Tax Certificate) Request">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Cedula Request (demo)</button></td>
+              </tr>
+              <tr data-row data-group="cho" data-search="Health Certificate Application food handler">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">PDF</span><span>Health Certificate Application<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">City Health Office</td>
+                <td data-label="File">PDF, 140 KB</td>
+                <td data-label="Last updated"><time datetime="2026-03-12">Mar 12, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Health Certificate Application">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Health Certificate Application (demo)</button></td>
+              </tr>
+              <tr data-row data-group="mayor" data-search="Mayor's Clearance Request">
+                <td><span class="form-name"><span class="file-badge" aria-hidden="true">DOC</span><span>Mayor’s Clearance Request<br><span class="tag-sample">Sample</span></span></span></td>
+                <td data-label="Office">Office of the City Mayor</td>
+                <td data-label="File">DOCX, 60 KB</td>
+                <td data-label="Last updated"><time datetime="2026-10-01">Oct 1, 2026</time></td>
+                <td class="td-action"><button type="button" class="btn" data-demo="Mayor’s Clearance Request">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                  Download Mayor’s Clearance Request (demo)</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" data-empty hidden>
+          <h2>No forms found</h2>
+          <p data-empty-msg>No forms match your search.</p>
+          <button type="button" class="btn btn-outline" data-filter-reset>Show all forms</button>
+        </div>
+
+        <p class="help-line"><strong>Can’t find a form?</strong> Call the Mayor’s Office at <a href="tel:+639988107142">0998 810 7142</a> or e-mail <a href="mailto:forms@example.com">forms@example.com</a> <span class="tag-sample">Sample email</span>. You can also <a href="contact.html">send us a message</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js?v=4"></script>
+</body>
+</html>
